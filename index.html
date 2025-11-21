@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" type="Favicon.png" href="favicon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<body>
+  <header>
+    <h1>Future Tech IT Training</h1>
+    <p>Empowering Your Digital Future</p>
+  </header>
+<div style="text-align: center; margin: 30px 0; font-size: 24px; font-weight: bold; color: white;">
+  WELCOME TO FUTURE TECH IT TRAINING – EMPOWERING YOUR DIGITAL FUTURE!
+</div>
+
+  <!-- Add the About section here -->
+  <section id="about" style="text-align: center; margin: 40px 0;">
+    <h2>About Future Tech IT Training</h2>
+    <p>
+      Future Tech IT Training is a forward-thinking education provider based in Rustenburg, South Africa. 
+      We specialize in vendor-authorized IT certification programs from Microsoft, Cisco, AWS, and CompTIA, 
+      designed to empower individuals, teams, and organizations in the digital age. Our flexible learning formats, 
+      expert instructors, and modern lab environments ensure that every learner gains practical skills, 
+      industry-recognized credentials, and career confidence. Whether you're a student, professional, or corporate team, 
+      Future Tech is your trusted partner for IT enablement and growth.
+    </p>
+  </section>
+
+
+<section id="carousel" style="text-align: center; margin: 40px 0;">
+  <h2>Explore Our Training Environment</h2>
+  <div class="slideshow-wrapper">
+    <div class="slideshow-container">
+      <img id="slide" src="training1.jpg" alt="IT Training Slide" />
+    </div>
+  </div>
+</section>
+
+</style>
+</head>
+<script>
+  const images = ["IT PICTURE 3.jpg", "IT PICTURE 2.jpg", "IT PICTURE 4.jpg"];
+  let index = 0;
+  const slide = document.getElementById("slide");
+
+  setInterval(() => {
+    index = (index + 1) % images.length;
+    slide.src = images[index];
+  }, 4000); // Change every 4 seconds
+</script>
+
+<body>
+
+ <section id="training-video" style="text-align: center; margin: 40px 0;">
+  <h2>Training Introduction Video</h2>
+  <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%;">
+    <iframe 
+      src="https://www.youtube.com/embed/QyhwSYhX09s" 
+      title="Future Tech Training Intro" 
+      frameborder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+      allowfullscreen 
+      style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+    </iframe>
+  </div>
+</section>
+
+  <nav>
+    <ul>
+      <li><a href="#purpose">Purpose</a></li>
+      <li><a href="#benefits">Benefits</a></li>
+      <li><a href="#payments">Payments</a></li>
+      <li><a href="#audience">Audience</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#legal">Legal</a></li>
+    </ul>
+  </nav>
+
+  <section id="purpose">
+    <h2>Purpose</h2>
+    <p>Future Tech provides world-class IT training and certification programs to help individuals and organizations thrive in the digital age.</p>
+  </section>
+<section id="courses" style="text-align: center; margin: 40px 0;">
+  <h2>Our Courses</h2>
+
+  <div class="course">
+    <button class="course-btn">💻 Microsoft Azure Fundamentals (AZ-900)</button>
+    <div class="course-info">
+      <p>Learn the basics of cloud computing, Azure services, pricing, and security. Perfect for beginners.</p>
+    </div>
+  </div>
+
+  <div class="course">
+    <button class="course-btn">🌐 Cisco CCNA Networking Essentials</button>
+    <div class="course-info">
+      <p>Master networking concepts, routing, switching, and troubleshooting to prepare for the CCNA exam.</p>
+    </div>
+  </div>
+
+  <div class="course">
+    <button class="course-btn">☁️ AWS Certified Solutions Architect – Associate</button>
+    <div class="course-info">
+      <p>Design scalable cloud solutions, understand AWS services, and prepare for the associate-level exam.</p>
+    </div>
+  </div>
+<div class="course">
+    <button class="course-btn">🔒 CompTIA Security+ (SY0-701)</button>
+    <div class="course-info">
+      <p>Gain essential cybersecurity skills, covering threats, vulnerabilities, risk management, and encryption.</p>
+    </div>
+  </div>
+
+  <div class="course">
+    <button class="course-btn">🖥️ Web Development with HTML, CSS & JavaScript</button>
+    <div class="course-info">
+      <p>Build modern websites with responsive design, interactive features, and strong coding fundamentals.</p>
+    </div>
+  </div>
+</section>
+
+<style>
+  .course { margin: 15px 0; }
+  .course-btn {
+    background-color: #0055A5;
+    color: white;
+    padding: 12px;
+    width: 80%;
+    border: none;
+    text-align: left;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  .course-btn:hover { background-color: #003B73; }
+  .course-info {
+    display: none;
+    margin-top: 10px;
+    padding: 10px;
+    background: #f9f9f9;
+    border-left: 3px solid #0055A5;
+    width: 80%;
+    margin: auto;
+    border-radius: 5px;
+  }
+</style>
+<script>
+  const buttons = document.querySelectorAll(".course-btn");
+  buttons.forEach(btn => {
+    btn.addEventListener("click", () => {
+      // Close all other course-info sections
+      document.querySelectorAll(".course-info").forEach(info => {
+        if (info !== btn.nextElementSibling) {
+          info.style.display = "none";
+        }
+      });
+      // Toggle the clicked one
+      const info = btn.nextElementSibling;
+      info.style.display = info.style.display === "block" ? "none" : "block";
+    });
+  });
+</script>
+
+
+ <section id="benefits">
+    <h2>Benefits</h2>
+    <ul>
+      <li>Vendor-authorized training (Microsoft, Cisco, AWS, CompTIA)</li>
+      <li>Flexible learning formats: online, hybrid, in-person</li>
+      <li>Certification exam preparation and career support</li>
+      <li>Access to expert instructors and modern labs</li>
+    </ul>
+  </section>
+
+  <section id="payments">
+    <h2>Payments</h2>
+    <p>We accept secure online payments via EFT, credit card, and PayFast. Installment plans and corporate invoicing are available.</p>
+  </section>
+
+  <section id="audience">
+    <h2>Target Audience</h2>
+    <p>Our programs are designed for students, professionals, corporate teams, and government organizations seeking IT enablement.</p>
+  </section>
+<section id="connect" style="text-align: center; margin: 40px 0;">
+  <h2>Stay Connected</h2>
+
+  <p><strong>📍 Location:</strong> Rustenburg, North-West, South Africa</p>
+  <p><strong>📞 Phone:</strong> 082 061 4458 | 079 650 1196</p>
+  <p><strong>📧 Email:</strong> <a href="mailto:keorapetsetause112@gmail.com">keorapetsetause112@gmail.com</a></p>
+
+  <h3>Subscribe for Updates</h3>
+  <form>
+    <input type="email" placeholder="Enter your email to subscribe" style="padding: 10px; width: 250px;" required>
+    <button type="submit" style="padding: 10px;">Subscribe</button>
+  </form>
+
+  <h3>Follow Us</h3>
+  <div style="margin-top: 20px;">
+    <a href="https://www.facebook.com" target="_blank" style="margin: 0 10px;">
+      <img src="facebook-logo-3.png" alt="Facebook" style="width: 32px;">
+    </a>
+    <a href="https://twitter.com" target="_blank" style="margin: 0 10px;">
+      <img src="twitter logo.png" alt="Twitter" style="width: 32px;">
+    </a>
+    <a href="https://wa.me/27820614458" target="_blank" style="margin: 0 10px;">
+      <img src="whatsapp logo.webp" alt="WhatsApp" style="width: 32px;">
+    </a>
+  </div>
+</section>
+
+
+<section id="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <label for="name">Name:</label><br />
+      <input type="text" id="name" name="name" /><br />
+      <label for="email">Email:</label><br />
+      <input type="email" id="email" name="email" /><br />
+      <label for="message">Message:</label><br />
+      <textarea id="message" name="message" rows="4"></textarea><br />
+      <input type="submit" value="Send Message" />
+    </form>
+  </section>
+
+  <section id="auth" style="text-align: center; margin: 40px 0;">
+  <h2>User Login / Register</h2>
+
+  <div style="margin-bottom: 20px;">
+    <input type="email" id="email" placeholder="Email" required><br><br>
+    <input type="password" id="password" placeholder="Password" required><br><br>
+    <button onclick="register()">Create Account</button>
+    <button onclick="login()">Login</button>
+  </div>
+
+  <div id="authMessage" style="color: green; font-weight: bold;"></div>
+</section>
+
+
+
+  <section id="legal">
+    <h2>Rules & Regulations</h2>
+    <ul>
+      <li>All course participants must adhere to Future Tech’s code of conduct and attendance policies.</li>
+      <li>Course fees must be paid in full before access to training materials is granted.</li>
+      <li>Certification exams are governed by the respective vendor’s terms and conditions.</li>
+      <li>Future Tech reserves the right to reschedule or cancel classes with prior notice.</li>
+      <li>Unauthorized sharing of course materials is strictly prohibited.</li>
+    </ul>
+
+<h2>Legal Disclaimer</h2>
+    <p>Future Tech provides training services based on vendor-authorized content. While we strive for accuracy, we do not guarantee certification outcomes or job placement. All information on this website is provided “as is” without warranty of any kind.</p>
+
+    <h2>Copyright Notice</h2>
+    <p>&copy; 2025 Future Tech IT Training. All content, including text, images, logos, and course materials, is protected under South African copyright law. Unauthorized reproduction or distribution is prohibited.</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Future Tech IT Training. All rights reserved.</p>
+  </footer>
+
+  <!-- AI Assistant Chat Widget -->
+  <div id="chatbot" style="position: fixed; bottom: 20px; right: 20px; width: 300px; background: white; border: 1px solid #ccc; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); font-family: Arial, sans-serif;">
+    <div style="background-color: #0055a5; color: white; padding: 10px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
+      <strong>FutureBot</strong> – AI Assistant
+    </div>
+    <div id="chatlog" style="height: 200px; overflow-y: auto; padding: 10px; font-size: 14px;"></div>
+    <input type="text" id="userInput" placeholder="Ask me anything..." style="width: 100%; border: none; border-top: 1px solid #ccc; padding: 10px; box-sizing: border-box;" />
+  </div>
+
+  <script>
+    const chatlog = document.getElementById('chatlog');
+    const userInput = document.getElementById('userInput');
+
+
+userInput.addEventListener('keypress', function(e) {
+      if (e.key === 'Enter') {
+        const userText = userInput.value.trim();
+        if (userText) {
+          chatlog.innerHTML += `<div><strong>You:</strong> ${userText}</div>`;
+          respondToUser(userText);
+          userInput.value = '';
+          chatlog.scrollTop = chatlog.scrollHeight;
+        }
+      }
+    });
+
+     function respondToUser(input) {
+    const text = input.toLowerCase();
+    let response = "I'm here to help! Ask me about courses, payments, or contact info.";
+
+    if (text.includes("course") || text.includes("training") || text.includes("certification")) {
+      response = "We offer Microsoft, Cisco, AWS, and CompTIA training. Would you like a full list?";
+    } else if (text.includes("payment") || text.includes("price") || text.includes("cost")) {
+      response = "You can pay via EFT, credit card, or PayFast. Installments are available too.";
+    } else if (text.includes("contact") || text.includes("email") || text.includes("phone")) {
+      response = "You can reach us via the contact form or email us at keorapetsetause112@gmail.com.";
+    } else if (text.includes("location") || text.includes("where")) {
+      response = "We are based in Rustenburg, North-West, South Africa.";
+    } else if (text.includes("benefits") || text.includes("why")) {
+      response = "Our training includes expert instructors, modern labs, and certification prep. It’s career-focused.";
+    }
+
+    chatlog.innerHTML += `<div><strong>FutureBot:</strong> ${response}</div>`;
+  }
+
+  // 👋 Greeting on page load
+  window.onload = () => {
+    chatlog.innerHTML += `<div><strong>FutureBot:</strong> 👋 Welcome to Future Tech IT Training! Ask me anything about our courses, payments, or how to get started.</div>`;
+  };
+</script>
+
+
+
+
+ </script>
+</body>
+</html>
